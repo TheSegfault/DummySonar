@@ -8,6 +8,7 @@ import { metaReducers, reducers } from '../reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { AppEffects } from '../app.effects';
 import { environment as env } from '../../environments/environment';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { environment as env } from '../../environments/environment';
       maxAge: 10,
       logOnly: env.production,
     }),
+    StoreRouterConnectingModule.forRoot(),
   ],
   exports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { environment as env } from '../../environments/environment';
 export class CoreModule {
   constructor(@Optional()
               @SkipSelf()
-                parentModule: CoreModule,) {
+                parentModule: CoreModule,
+  ) {
     throwIfAlreadyLoaded(parentModule, 'CoreModule');
   }
 }
