@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { CoreModule } from './core/core.module';
   imports: [
     AppRoutingModule,
     CoreModule,
+    StoreRouterConnectingModule.forRoot(),
   ],
   bootstrap: [ AppComponent ]
 })
