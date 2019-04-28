@@ -27,7 +27,4 @@ export class HomeTestComponent implements OnInit {
     // TODO: Dont forget to use a guard in order to check if connected for each route
     this.$store.dispatch(new HomeStoreActions.LoginRequestAction({ userName: 'coucou', password: 'coucou' }));
   }
-
-  test() {
-  }
 }

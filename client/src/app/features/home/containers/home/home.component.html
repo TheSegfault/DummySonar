@@ -4,6 +4,6 @@
   isLoading: {{ $isLoading | async  }}
   user: {{ $user | async | json }}
 
-  <button [routerLinkActive]="['active']" routerLink="/" (click)="test()"> Routing test</button>
+  <button [routerLinkActive]="['active']" routerLink="/home2"> Routing test2</button>
   <router-outlet></router-outlet>
 </div>

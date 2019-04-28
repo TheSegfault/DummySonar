@@ -1,9 +1,4 @@
 <div>
-  HOME
-  Error: {{ $error | async  }}
-  isLoading: {{ $isLoading | async  }}
-  user: {{ $user | async | json }}
-
-  <button [routerLinkActive]="['active']" routerLink="/" (click)="test()"> Routing test</button>
-  <router-outlet></router-outlet>
+  HOME-TEST
+  <button [routerLinkActive]="['active']" routerLink="/home"> Routing test</button>
 </div>
