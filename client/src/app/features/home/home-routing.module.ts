@@ -2,13 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './containers/home/home.component';
 
+
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
   },
   {
-    path: 'home2',
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'home-test',
     loadChildren: 'src/app/features/home2/home-test.module#HomeTestModule',
   }
 ];
