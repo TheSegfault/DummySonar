@@ -1,0 +1,7 @@
+<div>
+  HOME
+  Error: {{ $error | async  }}
+  isLoading: {{ $isLoading | async  }}
+  user: {{ $user | async | json }}
+  <router-outlet></router-outlet>
+</div>
