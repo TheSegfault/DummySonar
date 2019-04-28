@@ -1,8 +1,16 @@
 <div>
   HOME
-  Error: {{ $error | async  }}
-  isLoading: {{ $isLoading | async  }}
-  user: {{ $user | async | json }}
+  <span *ngIf="$error | async as err">
+    Error: {{ err }}
+</span>
+
+  <span *ngIf="$isLoading | async as isLoading">
+      isLoading: {{ isLoading }}
+  </span>
+
+  <span *ngIf="$user | async | json as user">
+      user: {{ user }}
+  </span>
 
   <button [routerLinkActive]="['active']" routerLink="/home2"> Routing test2</button>
   <router-outlet></router-outlet>
