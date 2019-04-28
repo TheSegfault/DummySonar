@@ -1,0 +1,48 @@
+Here is one of our real old projects which is already implemented.
+
+Please create a repo on GitHub for the test development.
+
+
+Please implement that 2 pages with latest Angular
+/login -> LoginPage.jpg
+/ -> HomePage.jpg
+
+Please implement angular router
+
+
+=====
+Styles:
+Please DO NOT use any additional frameworks/UI Libraries (eg. Bootstrap, Material...)
+All css should be done by hand.
+Use SCSS
+Please use FLEX as much as possible
+
+=====
+Create authService and one method `isAuthenticated(): boolean` it can return static `true` or `false`
+
+
+=====
+Create Login Page
+On load if user is authenticated then redirect him to the home page
+
+
+=====
+Create Home Page
+Create Page header as component (notice small line which appears on mouse hover in the menu)
+
+
+=====
+Nice to have if you have a time
+
+Create route guard to check if user us authenticated.
+If not authenticated then redirect to /login
+
+Create a pipe which replace all "new line chars" with '<br>' and apply it on news content
+
+Unit testing of services, components, pipes
+
+
+=====
+If you wish
+
+Other things to show what you can do in TypeScript, SCSS ...
