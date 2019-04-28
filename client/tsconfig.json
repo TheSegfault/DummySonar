@@ -1,19 +1,19 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
       "@app/env": [
-        "environments/environment"
+        "src/environments/environment"
       ],
       "@features/*": [
-        "app/features/*"
+        "src/app/features/*"
       ],
       "@core/*": [
-        "app/core/*"
+        "src/app/core/*"
       ],
       "@shared/*": [
-        "app/shared/*"
+        "src/app/shared/*"
       ]
     },
     "outDir": "./dist/out-tsc",
