@@ -9,10 +9,6 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
     path: 'home-test',
     loadChildren: 'src/app/features/home-test/home-test.module#HomeTestModule',
   }
