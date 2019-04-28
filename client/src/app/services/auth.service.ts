@@ -8,7 +8,6 @@ export interface User {
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-
   public static login(userName: string, password: string): Observable<User> {
     return of({ user: userName } as User);
   }

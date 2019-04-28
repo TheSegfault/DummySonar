@@ -5,12 +5,12 @@ import { Observable } from 'rxjs';
 import { User } from '../../../../services/auth.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: [ './home.component.scss' ],
+  selector: 'app-home2',
+  templateUrl: './home-test.component.html',
+  styleUrls: [ './home-test.component.scss' ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent implements OnInit {
+export class HomeTestComponent implements OnInit {
   public $error: Observable<string>;
   public $isLoading: Observable<boolean>;
   public $user: Observable<User>;
