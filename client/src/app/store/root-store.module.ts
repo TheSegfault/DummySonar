@@ -8,7 +8,7 @@ import { NavigationActionTiming, routerReducer, StoreRouterConnectingModule } fr
 import { environment as env } from '@app/env';
 
 import { HomeStoreModule } from '@features/home/store';
-
+import { CustomSerializer } from './custom-route-serializer';
 
 @NgModule({
   declarations: [],
@@ -24,6 +24,7 @@ import { HomeStoreModule } from '@features/home/store';
       logOnly: env.production,
     }),
     StoreRouterConnectingModule.forRoot({
+      serializer: CustomSerializer,
       navigationActionTiming: NavigationActionTiming.PostActivation, // To use if activation needs to append after a guard
     }),
   ]
