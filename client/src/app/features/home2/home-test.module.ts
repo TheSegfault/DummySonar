@@ -4,7 +4,10 @@ import { HomeTestRoutingModule } from '@features/home2/home-test-routing.module'
 import { HomeTestComponent } from '@features/home2/containers/home-test/home-test.component';
 
 @NgModule({
-  imports: [ HomeTestRoutingModule, SharedModule ],
+  imports: [
+    HomeTestRoutingModule,
+    SharedModule
+  ],
   declarations: [ HomeTestComponent ]
 })
 export class HomeTestModule {

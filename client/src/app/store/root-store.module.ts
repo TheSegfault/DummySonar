@@ -5,9 +5,10 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { NavigationActionTiming, routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 
-import { environment as env } from '../../environments/environment';
+import { environment as env } from '@app/env';
 
-import { HomeStoreModule } from './home-store';
+import { HomeStoreModule } from '@features/home/store';
+
 
 @NgModule({
   declarations: [],

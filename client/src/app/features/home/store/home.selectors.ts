@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector, MemoizedSelector } from '@ngrx/store';
+import { User } from '@models/User';
 import { HomeState } from './home.state';
-import { User } from '../../services/auth.service';
 
 const getError = (state: HomeState): any => state.error;
 

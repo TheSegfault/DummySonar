@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component, OnInit, } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { HomeStoreActions, HomeStoreSelectors, RootStoreState } from '../../../../root-store';
 import { Observable } from 'rxjs';
-import { User } from '../../../../services/auth.service';
+
+import { HomeStoreActions, HomeStoreSelectors } from '@features/home/store';
+import { User } from '@models/User';
+import { RootState } from '@rootStore/state';
 
 @Component({
   selector: 'app-home2',
@@ -15,7 +17,7 @@ export class HomeTestComponent implements OnInit {
   public $isLoading: Observable<boolean>;
   public $user: Observable<User>;
 
-  constructor(private $store: Store<RootStoreState.RootState>) {
+  constructor(private $store: Store<RootState>) {
   }
 
   ngOnInit(): void {

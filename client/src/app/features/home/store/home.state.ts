@@ -1,4 +1,4 @@
-import { User } from '../../services/auth.service';
+import { User } from '@models/User';
 
 export interface HomeState {
   user: User | null;
