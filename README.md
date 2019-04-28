@@ -1,4 +1,4 @@
-# DummySonar
+# NgrxCore
 Fancy sandbox project
 
 https://ngrx.io/guide/store-devtools -> Install Redux Devtools on chrome and start it while the app is running
