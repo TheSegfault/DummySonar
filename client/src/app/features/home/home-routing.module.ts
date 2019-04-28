@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'home-test',
-    loadChildren: 'src/app/features/home2/home-test.module#HomeTestModule',
+    loadChildren: 'src/app/features/home-test/home-test.module#HomeTestModule',
   }
 ];
 

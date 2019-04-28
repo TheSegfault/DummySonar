@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
-import { HomeTestRoutingModule } from '@features/home2/home-test-routing.module';
-import { HomeTestComponent } from '@features/home2/containers/home-test/home-test.component';
+import { HomeTestRoutingModule } from '@features/home-test/home-test-routing.module';
+import { HomeTestComponent } from '@features/home-test/containers/home-test/home-test.component';
 
 @NgModule({
   imports: [
