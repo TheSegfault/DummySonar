@@ -7,6 +7,7 @@ export interface RouterStateUrl {
   queryParams: Params;
 }
 
+// https://ngrx.io/guide/router-store/configuration
 export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
   serialize(routerState: RouterStateSnapshot): RouterStateUrl {
     let route = routerState.root;
