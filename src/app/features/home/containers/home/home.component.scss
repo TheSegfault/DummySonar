@@ -1,0 +1,9 @@
+$assetPath: "/assets/images";
+
+.bg-login-img {
+  background: url(#{$assetPath}/login.jpg) center;
+}
+
+.bg-red {
+  background-color: var(--danger);
+}

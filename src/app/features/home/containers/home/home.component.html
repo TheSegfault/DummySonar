@@ -1,16 +1,21 @@
-<div>
-  HOME
-  <span *ngIf="$error | async as err">
-    Error: {{ err }}
-</span>
+<!--<div>-->
+<!--  HOME-->
+<!--  <span *ngIf="$error | async as err">-->
+<!--    Error: {{ err }}-->
+<!--</span>-->
 
-  <span *ngIf="$isLoading | async as isLoading">
-      isLoading: {{ isLoading }}
-  </span>
+<!--  <span *ngIf="$isLoading | async as isLoading">-->
+<!--      isLoading: {{ isLoading }}-->
+<!--  </span>-->
 
-  <span *ngIf="$user | async | json as user">
-      user: {{ user }}
-  </span>
+<!--  <span *ngIf="$user | async | json as user">-->
+<!--      user: {{ user }}-->
+<!--  </span>-->
 
-  <button [routerLinkActive]="['active']" routerLink="/home-test"> Routing test2</button>
+<!--  <button [routerLinkActive]="['active']" routerLink="/home-test"> Routing test2</button>-->
+<!--</div>-->
+<div fxLayout="column" style="height: 100vh">
+  <div fxFlex="3 0 0" class="bg-login-img"></div>
+  <div fxFlex="2 0 0" class="bg-red"></div>
 </div>
+
