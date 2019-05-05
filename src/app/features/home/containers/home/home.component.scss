@@ -1,9 +1,75 @@
 $assetPath: "/assets/images";
 
-.bg-login-img {
-  background: url(#{$assetPath}/login.jpg) center;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.bg-red {
-  background-color: var(--danger);
+.login-img {
+  flex: 1;
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.login-logo {
+  flex: 1;
+  background: url($assetPath + '/logo.png') center center no-repeat;
+  background-size: 18rem 5rem;
+  margin-top: 6rem
+}
+
+span, label, button {
+  flex: 1;
+}
+
+input, span, label, button {
+  align-self: center;
+}
+
+span {
+  flex: 0.4;
+  margin-top: 2rem;
+  color: #bfb695;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  flex: 0.3;
+  width: 30rem;
+  text-align: center;
+  margin-top: 3rem;
+
+  font-size: 1.5rem;
+  font-weight: lighter;
+  border-width: 0 0 0.5px;
+  border-color: #cdcdcd;
+}
+
+.login-button {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  border-width: 0.2rem;
+  border-color: #000000;
+  font-size: medium;
+}
+
+.login-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-footer {
+  flex: 1;
+  align-self: center;
+  vertical-align: bottom;
 }

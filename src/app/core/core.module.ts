@@ -5,13 +5,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { RootStoreModule } from '@rootStore/root-store.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     RouterModule,
     RootStoreModule,
-    FlexLayoutModule,
   ],
   exports: [
     BrowserModule,

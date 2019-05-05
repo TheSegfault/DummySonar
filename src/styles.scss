@@ -3,4 +3,11 @@
   font-size: 62.5%; // rem tricks
 }
 
+// Removing body native margin
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
 @import "theme/colors.scss";
