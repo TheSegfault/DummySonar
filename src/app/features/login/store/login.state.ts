@@ -1,13 +1,15 @@
 import { User } from '@models/User';
 
-export interface HomeState {
+export interface LoginState {
   user: User | null;
   isLoading: boolean;
   error: string;
+  isLogged: boolean;
 }
 
-export const initialState: HomeState = {
+export const initialState: LoginState = {
   user: null,
   isLoading: false,
-  error: null
+  error: null,
+  isLogged: false,
 };

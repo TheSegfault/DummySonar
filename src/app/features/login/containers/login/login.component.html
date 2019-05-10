@@ -1,0 +1,29 @@
+<div class="container" style="height: 100vh">
+
+  <img class="login-img" src="/assets/images/login.jpg" alt="Login image of a man using a complex machine">
+
+  <div class="login-form">
+
+    <div class="login-logo"></div>
+
+    <input #username type="text" placeholder="Login" class="login-input"/>
+    <input #password type="password" placeholder="Password" class="password-input"/>
+
+    <span>Forgot your password ?</span>
+
+    <div class="login-button-container">
+      <button class="login-button" (click)="login(username.value, password.value)">LOGIN</button>
+    </div>
+
+    <div style="flex: 1;"></div>
+
+  </div>
+  <div class="language-footer">
+    <div style="color:black">EN</div>
+    <div>FR</div>
+    <div>IT</div>
+    <div>ES</div>
+  </div>
+
+</div>
+

@@ -2,9 +2,9 @@ import { Action } from '@ngrx/store';
 import { User } from '@models/User';
 
 export enum ActionTypes {
-  LOGIN_REQUEST = '[Home] Login Request',
-  LOGIN_FAILURE = '[Home] Login Failure',
-  LOGIN_SUCCESS = '[Home] Login Success'
+  LOGIN_REQUEST = '[Login] Login Request',
+  LOGIN_FAILURE = '[Login] Login Failure',
+  LOGIN_SUCCESS = '[Login] Login Success'
 }
 
 export class LoginRequestAction implements Action {
@@ -28,7 +28,7 @@ export class LoginSuccessAction implements Action {
   }
 }
 
-export type HomeActions =
+export type LoginActions =
   | LoginRequestAction
   | LoginFailureAction
   | LoginSuccessAction;

@@ -1,40 +1,10 @@
-<!--<div>-->
-<!--  HOME-->
-<!--  <span *ngIf="$error | async as err">-->
-<!--    Error: {{ err }}-->
-<!--</span>-->
+<div>
+  HOME
+  <span *ngIf="$user | async | json as user">
+      user: {{ user }}
+  </span>
 
-<!--  <span *ngIf="$isLoading | async as isLoading">-->
-<!--      isLoading: {{ isLoading }}-->
-<!--  </span>-->
-
-<!--  <span *ngIf="$user | async | json as user">-->
-<!--      user: {{ user }}-->
-<!--  </span>-->
-
-<!--  <button [routerLinkActive]="['active']" routerLink="/home-test"> Routing test2</button>-->
-<!--</div>-->
-
-<div class="container" style="height: 100vh">
-
-  <img class="login-img" src="/assets/images/login.jpg" alt="Login image of a man using a complex machine">
-
-  <div class="login-form">
-
-    <div class="login-logo"></div>
-
-    <input placeholder="Login" class="login-input"/>
-    <input placeholder="Password" class="password-input"/>
-
-    <span>Forgot your password ?</span>
-
-    <div class="login-button-container">
-      <button class="login-button">LOGIN</button>
-    </div>
-
-    <div class="language-footer"> EN FR IT ES</div>
-
-  </div>
-
+  <button [routerLinkActive]="['active']" routerLink="/home-test"> Routing test2</button>
 </div>
+
 

@@ -7,14 +7,15 @@ import { NavigationActionTiming, routerReducer, StoreRouterConnectingModule } fr
 
 import { environment as env } from '@app/env';
 
-import { HomeStoreModule } from '@features/home/store';
 import { CustomSerializer } from './custom-route-serializer';
+
+import { LoginStoreModule } from '@features/login/store';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    HomeStoreModule,
+    LoginStoreModule,
     StoreModule.forRoot({
       router: routerReducer
     }),

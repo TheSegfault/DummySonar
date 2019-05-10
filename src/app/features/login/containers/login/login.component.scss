@@ -1,0 +1,86 @@
+$assetPath: "/assets/images";
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-img {
+  flex: 1;
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .login-logo {
+    flex: 1;
+    background: url($assetPath + '/logo.png') center center no-repeat;
+    background-size: 18rem 5rem;
+    margin-top: 6rem
+  }
+
+  input {
+    flex: 0.5;
+    width: 30rem;
+    text-align: center;
+    margin-top: 3rem;
+
+    font-size: 1.5rem;
+    font-weight: lighter;
+    border-width: 0 0 0.5px;
+    border-color: #efefef;
+  }
+
+  span {
+    margin-top: 2rem;
+    color: #b1a579;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  span, button {
+    flex: 1;
+  }
+
+  input, span, button {
+    align-self: center;
+  }
+
+}
+
+.login-button-container {
+  display: flex;
+  flex-direction: column;
+
+  .login-button {
+    width: 11rem;
+    height: 4rem;
+    border-radius: 2.5rem;
+    border-width: 0.15rem;
+    border-color: #000000;
+    font-size: medium;
+    font-weight: 200;
+  }
+}
+
+.language-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 11rem;
+
+  flex: 0;
+
+  align-self: center;
+  margin-bottom: 2rem;
+  color: #b1a579;
+
+  span {
+    flex: 1;
+  }
+}

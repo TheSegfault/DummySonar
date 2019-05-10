@@ -1,5 +1,5 @@
-import { HomeStoreState } from '@features/home/store';
+import { LoginStoreState } from '@features/login/store';
 
 export interface RootState {
-  homeFeature: HomeStoreState.HomeState;
+  loginFeature: LoginStoreState.LoginState;
 }

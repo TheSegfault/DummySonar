@@ -1,7 +1,7 @@
-import { ActionTypes, HomeActions } from './home.actions';
-import { HomeState, initialState } from './home.state';
+import { ActionTypes, LoginActions } from './login.actions';
+import { initialState, LoginState } from './login.state';
 
-export function homeReducer(state = initialState, action: HomeActions): HomeState {
+export function loginReducer(state = initialState, action: LoginActions): LoginState {
   switch (action.type) {
     case ActionTypes.LOGIN_REQUEST:
       return {
@@ -14,13 +14,15 @@ export function homeReducer(state = initialState, action: HomeActions): HomeStat
         ...state,
         user: action.payload.user,
         error: null,
-        isLoading: false
+        isLoading: false,
+        isLogged: true,
       };
     case ActionTypes.LOGIN_FAILURE:
       return {
         ...state,
         error: action.payload.error,
-        isLoading: false
+        isLoading: false,
+        isLogged: false,
       };
     default: {
       return state;
