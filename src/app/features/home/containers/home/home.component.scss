@@ -17,7 +17,7 @@ $assetPath: "/assets/images";
   }
 
   .menu {
-    flex: 3;
+    flex: 5;
   }
 
   .mini-menu {
@@ -43,4 +43,8 @@ $assetPath: "/assets/images";
 
 .products {
   flex: 5;
+}
+
+.footer {
+  flex: 1;
 }
