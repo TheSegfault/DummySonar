@@ -8,6 +8,8 @@ const getIsLoading = (state: LoginState): boolean => state.isLoading;
 
 const getUser = (state: LoginState): any => state.user;
 
+const getIsLogged = (state: LoginState): any => state.isLogged;
+
 export const selectLoginState: MemoizedSelector<object, LoginState> = createFeatureSelector<LoginState>('Login');
 
 export const selectLoginError: MemoizedSelector<object, any> = createSelector(
@@ -24,3 +26,9 @@ export const selectUser: MemoizedSelector<object, User> = createSelector(
   selectLoginState,
   getUser
 );
+
+export const selectIsLogged: MemoizedSelector<object, boolean> = createSelector(
+  selectLoginState,
+  getIsLogged
+);
+

@@ -1,6 +1,7 @@
 //  With the rootStore selectors you can combine child selectors into one, pretty convenient for isLoading for example
 
 // import { createSelector, MemoizedSelector } from '@ngrx/store';
+// import { LoginStoreSelectors } from '@features/login/store';
 
 // import { HomeStoreSelectors } from '@features/home/store';
 // import { CoucouStoreSelectors } from '@features/home/store';
@@ -17,3 +18,8 @@
 //   }
 // );
 
+// export const selectIsLoggedIn: MemoizedSelector<object, boolean> = createSelector(
+//   LoginStoreSelectors.selecIsLogged, (isLoggedIn) => {
+//     return isLoggedIn;
+//   }
+// );
