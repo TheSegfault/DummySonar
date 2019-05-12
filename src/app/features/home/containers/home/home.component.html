@@ -1,10 +1,26 @@
-<div>
-  HOME
-  <span *ngIf="$user | async | json as user">
-      user: {{ user }}
-  </span>
+<div class="container">
+  <!--  HOME-->
+  <!--  <span *ngIf="$user | async | json as user">-->
+  <!--      user: {{ user }}-->
+  <!--  </span>-->
 
-  <button [routerLinkActive]="['active']" routerLink="/home-test"> Routing test2</button>
+  <!--  <button [routerLinkActive]="['active']" routerLink="/home-test"> Routing test2</button>-->
+  <div class="header" style="background-color: red">
+    <div class="logo" style="background-color: yellowgreen"></div>
+    <div class="menu" style="background-color: indianred"></div>
+    <div class="mini-menu" style="background-color: blueviolet">
+      <div style="background-color: cadetblue"></div>
+      <div style="background-color: cornflowerblue"></div>
+      <div style="background-color: deepskyblue"></div>
+    </div>
+  </div>
+
+  <div class="presentation">
+<!--    <img src="/assets/images/home.jpg" alt="Image of a beautiful machine">-->
+  </div>
+
+  <div class="products" style="background-color: aquamarine"></div>
+
 </div>
 
 

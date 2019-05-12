@@ -1,0 +1,46 @@
+$assetPath: "/assets/images";
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+
+  .logo {
+    flex: 1;
+    background: url($assetPath + '/logo.png') center center no-repeat;
+    background-size: 18rem 5rem;
+  }
+
+  .menu {
+    flex: 3;
+  }
+
+  .mini-menu {
+    flex: 1;
+    display: flex;
+
+    div {
+      flex: 1;
+    }
+  }
+}
+
+.presentation {
+  flex: 4;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center
+  }
+}
+
+
+.products {
+  flex: 5;
+}
